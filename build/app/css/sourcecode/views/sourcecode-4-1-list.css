@@ -1,0 +1,53 @@
+.sourcecode-list {
+  min-width: 1260px;
+  max-width: 1260px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.sourcecode-list .list {
+  overflow: hidden;
+  width: 1042px;
+  margin: 174px auto;
+}
+
+.sourcecode-list .list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sourcecode-list .list ul li {
+  margin: 10px;
+  float: left;
+  width: 240px;
+}
+
+.sourcecode-list .list ul li a {
+  display: block;
+  width: 240px;
+}
+
+.sourcecode-list .list ul li a .pic {
+  display: block;
+  border: solid #ccc 1px;
+}
+
+.sourcecode-list .list ul li a .name {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  height: 38px;
+  padding: 8px 0;
+  background: #4a957c;
+  text-align: center;
+}
+
+.sourcecode-list .list ul li a:hover {
+  text-decoration: none;
+}
+
+.sourcecode-list .list ul li a:hover .name {
+  color: #7ae9d2;
+}

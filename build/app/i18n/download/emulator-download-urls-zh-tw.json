@@ -1,0 +1,25 @@
+{
+  "columnDefs": [
+    {"field": "fileName", "displayName": "文件名稱", "enableHiding": 0},
+    {"field": "progVer", "displayName": "程式版本號", "enableHiding": 0},
+    {"field": "fileVer", "displayName": "文件版本號", "enableHiding": 0},
+    {"field": "upTime", "displayName": "更新日期", "enableHiding": 0},
+    {"field": "releaseNote", "displayName": "釋出說明", "enableHiding": 0}
+  ],
+  "data": [
+    {
+      "fileName": "裝置模擬器",
+      "progVer": "1.0.0",
+      "fileVer": "N/A",
+      "upTime": "2017/02/16",
+      "releaseNote": "xxxxxxooooooooooo"
+    },
+    {
+      "fileName": "模擬器操作手冊",
+      "progVer": "1.0.0",
+      "fileVer": "1.1.1",
+      "upTime": "2017/02/16",
+      "releaseNote": "xxxxxxooooooooooo"
+    }
+  ]
+}

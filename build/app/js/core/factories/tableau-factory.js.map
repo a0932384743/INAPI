@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["core/factories/tableau-factory.js"],"sourcesContent":["(function () {\n  'use strict';\n\n  angular.module('core')\n    .factory('Tableau', Tableau);\n\n  Tableau.$inject = ['$window'];\n\n  function Tableau($window) {\n    return $window.tableau;\n  }\n}());\n"],"file":"tableau-factory.js"}

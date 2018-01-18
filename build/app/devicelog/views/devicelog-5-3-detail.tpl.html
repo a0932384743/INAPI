@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col-md-12">
+    <inapi-top-menu data-menu-id="devicelog"></inapi-top-menu>
+
+    <div class="content-scroll">
+      <div class="devicelog-detail">
+        <div class="grid-function">
+          <div class="function-left">
+            <div class="path-block"><span><a href="javascript:void(0)" data-ng-click="vm.goList()">裝置列表</a></span>/<span>詳細日誌</span></div>
+          </div>
+        </div>
+
+        <div class="grid-group">
+          <div class="grid-title">詳細日誌</div>
+          <div class="grid-table">
+            <div class="log-filter">
+              <div class="category-filter">
+                <label>量測參數：</label>
+                <span>
+                  <select class="form-control" data-ng-model="vm.measureParam" data-ng-options="option.label for option in vm.measureOptions">
+                    <option value="">-- 請選擇 --</option>
+                  </select>
+                </span>
+              </div>
+              <div class="time-filter">
+                <label>時間範圍：</label>
+                <span>
+                  <input class="form-control" placeholder="請選擇起始時間"
+                        data-moment-picker="vm.timeFilterS" data-ng-model="vm.timeFilterS"
+                        data-max-date="vm.timeFilterSMax"
+                        data-ng-model-options="{updateOn: 'blur'}"
+                        data-ng-click="vm.adjustStartTimeMinMax()" />
+                </span>
+                ~
+                <span>
+                  <input class="form-control" placeholder="請選擇結束時間"
+                        data-moment-picker="vm.timeFilterE" data-ng-model="vm.timeFilterE"
+                        data-min-date="vm.timeFilterEMin" data-max-date="vm.timeFilterEMax"
+                        data-ng-model-options="{updateOn: 'blur'}"
+                        data-ng-click="vm.adjustEndTimeMinMax()" />
+                </span>
+                <button type="button" class="btn button-green" data-auto-blur data-ng-click="vm.doQuery()">查詢</button>
+              </div>
+            </div>
+
+            <div class="log-data">
+              <div class="data-block">
+                <div class="data">
+                  <span><b>裝置代碼：</b>{{vm.devId}}</span>
+                  <span><b>量測參數：</b>{{vm.qryMeasureLabel}}</span>
+                  <span><b>時間範圍：</b>{{vm.qryTimeFilterSLabel}}  ~  {{vm.qryTimeFilterELabel}}</span>
+                </div>
+              </div>
+              <div class="tableau-holder" data-tableau-viz
+                  data-show-tabs="false"
+                  data-show-toolbar="false"
+                  data-show-export-image="false"
+                  data-show-export-pdf="false"
+                  data-width="100%"
+                  data-height="830px"
+                  data-category="{{vm.devCategory}}"
+                  data-measure="vm.measureParam"
+                  data-url="{{vm.tableauUrl}}"
+                  data-filters="vm.tableauFilters">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

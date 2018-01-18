@@ -1,0 +1,23 @@
+.secure-register {
+  min-width: 1260px;
+  background: url("../../../images/light01.png") no-repeat #56a696;
+  height: 577px;
+}
+
+.secure-register .paper {
+  position: relative;
+  top: 90px;
+  min-width: 1260px;
+  max-width: 1260px;
+  padding: 0;
+  z-index: 5;
+  background: url("../../../images/paper01.png") no-repeat left 30px;
+}
+
+.secure-register .reg-btns {
+  padding: 6px 0px 6px 124px;
+}
+
+.secure-register .reg-btns .btn {
+  width: 305px;
+}

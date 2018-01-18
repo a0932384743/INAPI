@@ -1,0 +1,26 @@
+<div class="navbar">
+  <div class="nav">
+    <div class="menu">
+      <ul>
+        <li data-ng-class="vm.highLightThis('newbie')"><a href="javascript:void(0)" data-ui-sref="navigation.machine-install">新手上路</a></li>
+        <li>|</li>
+        <li data-ng-class="vm.highLightThis('activedocs')"><a href="javascript:void(0)" data-ui-sref="activedocs.list">線上調用</a></li>
+        <li>|</li>
+        <li data-ng-class="vm.highLightThis('sourcecode')"><a href="javascript:void(0)" data-ui-sref="sourcecode.list">開源範例</a></li>
+        <li>|</li>
+        <li data-ng-class="vm.highLightThis('devicelog')"><a href="javascript:void(0)" data-ui-sref="devicelog.list">裝置日誌</a></li>
+        <li>|</li>
+        <li data-ng-class="vm.highLightThis('download')"><a href="javascript:void(0)" data-ui-sref="download.list">資源下載</a></li>
+        <li>|</li>
+        <li data-ng-class="vm.highLightThis('consulting')"><a href="javascript:void(0)" data-ui-sref="consulting.post">技術諮詢</a></li>
+      </ul>
+    </div>
+    <div class="user-info dropdown" data-dropdown>
+      <div class="user dropdown-toggle" data-dropdown-toggle data-ng-class="vm.highLightThis('account')">{{ vm.userTitle }}</div>
+      <ul class="dropdown-menu" data-dropdown-menu>
+        <li class="account-link"><a href="#" data-ui-sref="account.user-info">使用者資訊</a></li>
+        <li class="logout-link"><a href="#" data-ui-sref="secure.logout">登出</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

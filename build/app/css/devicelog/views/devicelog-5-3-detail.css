@@ -1,0 +1,276 @@
+.devicelog-detail {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.devicelog-detail .grid-function {
+  width: 1260px;
+  margin: 0 auto 12px auto;
+  overflow: hidden;
+}
+
+.devicelog-detail .grid-function .function-left {
+  float: left;
+  width: 172px;
+}
+
+.devicelog-detail .grid-function .function-left .path-block {
+  color: #6d6d6d;
+  font-size: 13px;
+  text-align: left;
+  height: 28px;
+  padding: 6px 0 0 0;
+}
+
+.devicelog-detail .grid-function .function-left .path-block span {
+  color: #009e96;
+  padding: 0 6px;
+}
+
+.devicelog-detail .grid-function .function-left .path-block span a {
+  color: #6d6d6d;
+}
+
+.devicelog-detail .grid-function .function-right {
+  float: right;
+  width: 250px;
+}
+
+.devicelog-detail .grid-function .function-right .serach-block {
+  position: relative;
+}
+
+.devicelog-detail .grid-function .function-right .serach-block .search-input {
+  width: 100%;
+  height: 28px;
+  border: solid #abccae 1px;
+  border-radius: 28px;
+  color: #a0a0a0;
+}
+
+.devicelog-detail .grid-function .function-right .serach-block .search-btn {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: url("../../../images/InAPI_5_searchIcon.png") no-repeat;
+  border-radius: 24px;
+  position: absolute;
+  right: 3px;
+  top: 2px;
+}
+
+.devicelog-detail .log-filter {
+  background-color: #f7f7f7;
+  padding: 12px 12px;
+  height: 60px;
+}
+
+.devicelog-detail .log-filter .category-filter {
+  width: 260px;
+  float: left;
+}
+
+.devicelog-detail .log-filter .category-filter label {
+  color: #a0a0a0;
+  display: inline-block;
+}
+
+.devicelog-detail .log-filter .category-filter span {
+  display: inline-block;
+  width: 186px;
+}
+
+.devicelog-detail .log-filter .category-filter span select {
+  width: 186px;
+  color: #808080;
+}
+
+.devicelog-detail .log-filter .time-filter {
+  margin: 0 0 0 68px;
+  width: 710px;
+  float: left;
+}
+
+.devicelog-detail .log-filter .time-filter label {
+  color: #a0a0a0;
+  display: inline-block;
+}
+
+.devicelog-detail .log-filter .time-filter span {
+  display: inline-block;
+  width: 242px;
+}
+
+.devicelog-detail .log-filter .time-filter span:nth-child(2) {
+  margin: 0 10px 0 0;
+}
+
+.devicelog-detail .log-filter .time-filter span:nth-child(3) {
+  margin: 0 0 0 10px;
+}
+
+.devicelog-detail .log-filter .time-filter span input {
+  width: 242px;
+  color: #808080;
+}
+
+.devicelog-detail .log-filter .time-filter .btn {
+  width: 80px;
+  height: 30px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.devicelog-detail .log-data {
+  clear: both;
+  padding: 18px 0 0 0;
+  overflow: hidden;
+}
+
+.devicelog-detail .log-data .data-block {
+  width: 100%;
+}
+
+.devicelog-detail .log-data .data-block .data {
+  padding: 8px 12px;
+  color: #000;
+}
+
+.devicelog-detail .log-data .data-block .data b {
+  color: #a0a0a0;
+  font-weight: normal;
+}
+
+.devicelog-detail .log-data .data-block .data span:nth-child(1) {
+  display: inline-block;
+  width: 280px;
+}
+
+.devicelog-detail .log-data .data-block .data span:nth-child(2) {
+  display: inline-block;
+  width: 230px;
+  padding: 0 0 0 8px;
+}
+
+.devicelog-detail .log-data .data-block .chart {
+  padding: 12px;
+}
+
+.devicelog-detail .log-data .log-block {
+  padding: 6px 12px 48px 12px;
+  overflow: hidden;
+}
+
+.devicelog-detail .log-data .log-block .list {
+  width: 430px;
+  float: left;
+}
+
+.devicelog-detail .log-data .log-block .list .grid {
+  width: 408px;
+  height: 468px;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid {
+  border: 0;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid .ui-grid-top-panel {
+  background: none;
+  background-color: transparent;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid .ui-grid-header {
+  color: #a0a0a0;
+  background-color: #fff;
+  border: solid #d7d7d7;
+  border-width: 0 0 1px 0;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid .ui-grid-header-cell-wrapper {
+  padding: 6px 0;
+  margin: 0;
+  height: 30px;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid .ui-grid-header-cell {
+  border-right: 0;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid .ui-grid-cell {
+  border-right: 0;
+  color: #6d6d6d;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid .ui-grid-cell:nth-child(1) {
+  color: #009e96;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid .ui-grid-cell-contents {
+  padding: 0 6px;
+  height: 20px;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color: #fff;
+  height: 20px;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid-row:nth-child(odd) .ui-grid-cell {
+  background-color: #f7f7f7;
+  height: 20px;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid-row .safe {
+  margin: 2px 0 0 0;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: #379adb;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid-row .warning {
+  margin: 2px 0 0 0;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: #ff7f0e;
+}
+
+.devicelog-detail .log-data .log-block .list .ui-grid-row .danger {
+  margin: 2px 0 0 0;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: #ff0e0e;
+}
+
+.devicelog-detail .grid-group {
+  border: solid #abccae 1px;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1260px;
+  max-width: 1260px;
+  margin: 24px auto;
+}
+
+.devicelog-detail .grid-title {
+  background-color: #abccae;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 17pt;
+  font-weight: bold;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.devicelog-detail .grid-table {
+  padding: 0;
+}
+
+.devicelog-detail .tableau-holder {
+  min-height: 400px;
+}

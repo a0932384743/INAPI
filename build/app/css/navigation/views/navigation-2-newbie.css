@@ -1,0 +1,107 @@
+.navigation-newbie {
+  min-width: 1260px;
+  width: 1260px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.navigation-newbie .left-menu {
+  width: 234px;
+  float: left;
+  padding: 20px 0 60px 0;
+  min-height: 520px;
+  background: url("../../../images/InAPI_2_bg.png") repeat-y;
+}
+
+.navigation-newbie .left-menu .menu-title {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  color: #999999;
+  padding: 6px 0;
+  background: url("../../../images/InAPI_2_line.png") repeat-x left bottom;
+}
+
+.navigation-newbie .left-menu .menu-nav {
+  padding: 0px 0px;
+}
+
+.navigation-newbie .left-menu .menu-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li {
+  font-size: 15px;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li a {
+  display: block;
+  height: 40px;
+  padding: 8px 0;
+  text-indent: 52px;
+  color: #7d7d7d;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li ul li {
+  font-size: 13px;
+  background: url("../../../images/InAPI_2_arrow.png") no-repeat right 4px;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li.active {
+  background-color: #4a957b;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li.active > a {
+  color: #fff;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li.menu1 > a {
+  background: url("../../../images/InAPI_2_icon1.png") no-repeat 24px 8px;
+  text-decoration: none;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li.menu2 > a {
+  background: url("../../../images/InAPI_2_icon2.png") no-repeat 24px 8px;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li.menu3 > a {
+  background: url("../../../images/InAPI_2_icon3.png") no-repeat 24px 8px;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li.menu4 > a {
+  background: url("../../../images/InAPI_2_icon4.png") no-repeat 24px 8px;
+}
+
+.navigation-newbie .left-menu .menu-nav ul li.menu5 > a {
+  background: url("../../../images/InAPI_2_icon5.png") no-repeat 24px 8px;
+}
+
+.navigation-newbie .right-main {
+  width: 970px;
+  float: left;
+  margin: 0 23px;
+}
+
+.navigation-newbie .right-main .grid-group {
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.navigation-newbie .right-main .grid-title {
+  background-color: #abccae;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 17pt;
+  font-weight: bold;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.navigation-newbie .right-main .grid-table {
+  padding: 10px 0;
+}

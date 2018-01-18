@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["consulting/consulting-module.js"],"sourcesContent":["(function () {\r\n  'use strict';\r\n\r\n  angular.module('consulting', [\r\n    'ui.router', 'pascalprecht.translate', 'dialogs.main', 'vcRecaptcha', 'angularSpinner'\r\n  ]);\r\n}());\r\n"],"file":"consulting-module.js"}

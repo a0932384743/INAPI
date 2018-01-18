@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="header">
+      <div class="h01"></div>
+      <inapi-logo></inapi-logo>
+    </div>
+    <div class="secure-login">
+      <div class="modal-backdrop fade in" data-ng-show="vm.isSending"></div>
+      <span data-us-spinner data-spinner-on="vm.isSending"></span>
+      <div class="computer">
+        <div class="login-forms">
+          <form method="post" novalidate="novalidate" data-ng-submit="vm.doSubmit()">
+            <div class="form-group">
+              <span class="f-title"><label for="un">帳號</label></span>
+              <span class="f-input"><input type="text" id="un" name="un" class="name form-control" data-ng-model="vm.un" spellcheck="false" placeholder="請輸入您的帳號" /></span>
+            </div>
+            <div class="form-group">
+              <span class="f-title"><label for="pwd">密碼</label></span>
+              <span class="f-input"><input type="password" id="pwd" name="pwd" class="password form-control" data-ng-model="vm.pwd" spellcheck="false" placeholder="請輸入您的密碼" /></span>
+            </div>
+            <div class="form-group">
+              <div class="login-input">
+                <input type="checkbox" name="checkboxG4" id="checkboxG4" class="form-control css-checkbox" data-ng-model="vm.flagRememberMe" />
+                <label for="checkboxG4" class="css-label">記住帳號</label>
+                <a href="#" data-ui-sref="secure.forget-pwd">忘記密碼?</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="login-btns">
+                <button type="submit" class="btn button-blue" data-auto-blur data-ng-disabled="vm.isSending">登入</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="login-text">尚無InAPI帳號<a href="#" data-ui-sref="secure.register">立即註冊</a></div>
+    </div>
+  </div>
+</div>

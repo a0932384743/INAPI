@@ -1,0 +1,25 @@
+.secure-register-disabled {
+  min-width: 1260px;
+  background: url("../../../images/light01.png") no-repeat #56a696;
+  height: 577px;
+}
+
+.secure-register-disabled .failure {
+  position: relative;
+  top: 95px;
+  min-width: 1260px;
+  max-width: 1260px;
+  padding: 0;
+  z-index: 5;
+  background: url("../../../images/failureTitle.png") no-repeat 150px 120px;
+}
+
+.secure-register-disabled .reg-btns {
+  width: 300px;
+  margin: 12px auto;
+}
+
+.secure-register-disabled .button-green,
+.secure-register-disabled .button-blue {
+  width: 100%;
+}

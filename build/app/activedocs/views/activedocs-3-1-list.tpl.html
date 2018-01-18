@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-12">
+    <inapi-top-menu data-menu-id="activedocs"></inapi-top-menu>
+
+    <div class="content-scroll">
+      <div class="activedocs-list">
+        <span data-us-spinner data-spinner-on="vm.isLoading"></span>
+        <iframe data-ng-src="{{vm.docUrl}}" allowfullscreen frame-loaded="vm.predictIframeLoaded(contentLoaded)"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

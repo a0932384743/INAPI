@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-12">
+    <inapi-top-menu data-menu-id="consulting"></inapi-top-menu>
+
+    <form method="post" data-ng-submit="vm.doSumbit()">
+      <div class="content-scroll">
+        <div class="modal-backdrop fade in" data-ng-show="vm.isSending"></div>
+        <span data-us-spinner data-spinner-on="vm.isSending"></span>
+        <div class="consulting-post">
+          <div class="title">技術諮詢</div>
+          <div class="equal">
+            <div class="row">
+              <div class="one">
+                <label for="email">聯絡信箱:</label>
+                <input type="text" class="my-input form-control" id="email" name="email" data-ng-model="vm.email" />
+              </div>
+              <div class="one">
+                <label for="questType">問題類型:</label>
+                <select class="my-select form-control" id="questType" data-ng-model="vm.questType">
+                  <option value="Could API">Could API</option>
+                  <option value="Local API">Local API</option>
+                  <option value="裝置模擬器">裝置模擬器</option>
+                  <option value="業務洽談">業務洽談</option>
+                </select>
+              </div>
+            </div>
+            <div class="row1">
+              <div class="one">
+                <p><label for="descp">問題描述:</label></p>
+                <textarea class="big-input form-control" id="descp" cols="30" rows="10" data-ng-model="vm.descp"></textarea>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="row1">
+              <div class="one">
+                <p><label for="snippet">程式代碼:</label></p>
+                <textarea class="big-input form-control" name="msg" id="snippet" cols="30" rows="10" data-ng-model="vm.snippet"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="send-group">
+            <div class="robot" data-ng-model="vm.gResponse"
+                data-vc-recaptcha data-key="vm.siteKey"
+                data-on-create="vm.setWidgetId(widgetId)"
+                data-on-success="vm.setRecaptchaIsChecked(response)"
+                data-on-expire="vm.resetRecaptcha()">
+            </div>
+            <div class="send-btns">
+              <button type="submit" class="btn button-blue" data-auto-blur data-ng-disabled="vm.isSending">送出諮詢</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

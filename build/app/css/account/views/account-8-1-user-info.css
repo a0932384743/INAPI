@@ -1,0 +1,106 @@
+.account-user-info {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.account-user-info .grid-group {
+  border: solid #abccae 1px;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1260px;
+  max-width: 1260px;
+  margin: 24px auto;
+}
+
+.account-user-info .grid-title {
+  background-color: #abccae;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 17pt;
+  font-weight: bold;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.account-user-info .grid-table {
+  padding: 0 10px 10px 10px;
+}
+
+.account-user-info .grid-table .client-info {
+  border-bottom: solid 1px #abccad;
+  padding: 24px;
+  font-size: 13pt;
+}
+
+.account-user-info .grid-table .client-info .info {
+  background-color: #f7f7f7;
+  padding: 50px 60px;
+}
+
+.account-user-info .grid-table .client-info dl {
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.account-user-info .grid-table .client-info dl dt {
+  width: 120px;
+  padding: 6px 12px 0 0;
+  margin: 0;
+  float: left;
+  text-align: right;
+  font-weight: normal;
+}
+
+.account-user-info .grid-table .client-info dl dd {
+  width: 680px;
+  padding: 6px 0 0 0;
+  margin: 0;
+  float: left;
+  color: #a0a0a1;
+}
+
+.account-user-info .grid-table .user-info {
+  padding: 24px;
+}
+
+.account-user-info .grid-table .user-info .info {
+  background-color: #f7f7f7;
+  padding: 50px 60px;
+}
+
+.account-user-info .grid-table .user-info .info dl {
+  margin: 0;
+}
+
+.account-user-info .grid-table .user-info .username {
+  background: url("../../../images/InAPI_8_icon1.png") no-repeat left 17px;
+}
+
+.account-user-info .grid-table .user-info .email {
+  background: url("../../../images/InAPI_8_icon2.png") no-repeat left 17px;
+}
+
+.account-user-info .grid-table .user-info .uptime {
+  background: url("../../../images/InAPI_8_icon3.png") no-repeat left 17px;
+}
+
+.account-user-info .grid-table dl dt {
+  width: 120px;
+  padding: 6px 12px 0 0;
+}
+
+.account-user-info .grid-table dl dd {
+  width: 680px;
+  padding: 6px 0 0 0;
+}
+
+.account-user-info .grid-table dl dd button {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 170px;
+  height: 28px;
+}

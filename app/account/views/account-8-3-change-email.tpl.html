@@ -1,0 +1,32 @@
+<form novalidate="novalidate" data-ng-submit="vm.doSubmit()">
+  <div class="modal-backdrop fade in" data-ng-show="vm.isSending"></div>
+  <span data-us-spinner data-spinner-on="vm.isSending"></span>
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" data-aria-label="Close" data-ng-click="vm.cancel()">×</button>
+    <h4 class="modal-title">電子信箱修改</h4>
+  </div>
+  <div class="modal-body">
+    <div class="user-info">
+      <dl class="old-email">
+        <dt>舊電子信箱：</dt>
+        <dd><input type="text" class="form-control" disabled data-ng-model="vm.userEmail" /></dd>
+      </dl>
+      <dl class="new-email">
+        <dt>新電子信箱：</dt>
+        <dd><input type="text" name="newEmail" required class="form-control" placeholder="新電子信箱" data-ng-model="vm.newEmail" /></dd>
+      </dl>
+      <dl class="cf-email">
+        <dt>確認新電子信箱：</dt>
+        <dd><input type="text" required class="form-control" placeholder="確認新電子信箱" data-ng-model="vm.newEmailConfirm" /></dd>
+      </dl>
+      <dl class="login-pwd">
+        <dt>登入密碼：</dt>
+        <dd><input type="password" required class="form-control" placeholder="密碼" data-ng-model="vm.pwd" /></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-default">{{ 'DIALOGS_YES' | translate}}</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal" data-ng-click="vm.cancel()">{{ 'DIALOGS_NO' | translate }}</button>
+  </div>
+</form>

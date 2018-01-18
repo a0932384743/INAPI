@@ -1,0 +1,102 @@
+@import "../../css/core.less";
+
+.account-user-info {
+  overflow:hidden;
+  margin-top: 15px;
+  margin-bottom: 45px;
+
+  .grid-group {
+    border: solid #abccae 1px;
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    min-width: @screen-default-width;
+    max-width: @screen-default-width;
+    margin: 24px auto;
+  }
+
+  .grid-title {
+    background-color: #abccae;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 17pt;
+    font-weight: bold;
+    color: #fff;
+    vertical-align: middle;
+  }
+
+  .grid-table {
+    padding:0 10px 10px 10px;
+
+    .client-info {
+      border-bottom: solid 1px #abccad;
+      padding: 24px;
+      font-size: 13pt;
+
+      .info {
+        background-color: #f7f7f7;
+        padding: 50px 60px;
+      }
+
+      dl {
+        overflow: hidden;
+        padding: 12px 0;
+
+        dt {
+          width: 120px;
+          padding: 6px 12px 0 0;
+          margin: 0;
+          float: left;
+          text-align: right;
+          font-weight: normal;
+        }
+
+        dd {
+          width: 680px;
+          padding: 6px 0 0 0;
+          margin: 0;
+          float: left;
+          color:#a0a0a1;
+        }
+      }
+    }
+
+    .user-info {
+      padding: 24px;
+
+      .info {
+        background-color:#f7f7f7;
+        padding: 50px 60px;
+
+        dl { margin: 0; }
+      }
+
+      .username { background: url(../../images/InAPI_8_icon1.png) no-repeat left 17px; }
+
+      .email { background: url(../../images/InAPI_8_icon2.png) no-repeat left 17px; }
+
+      .uptime { background: url(../../images/InAPI_8_icon3.png) no-repeat left 17px; }
+    }
+
+    dl {
+      dt {
+        width: 120px;
+        padding: 6px 12px 0 0;
+      }
+
+      dd {
+        width: 680px;
+        padding: 6px 0 0 0;
+
+        button {
+          position: absolute;
+          right: 0;
+          top: 6px;
+          width: 170px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}

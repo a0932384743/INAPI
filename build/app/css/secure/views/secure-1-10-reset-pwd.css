@@ -1,0 +1,39 @@
+.secure-reset-pwd {
+  min-width: 1260px;
+  background: url("../../../images/light01.png") no-repeat #56a696;
+  height: 577px;
+}
+
+.secure-reset-pwd .reg-forms {
+  top: 95px;
+  position: relative;
+}
+
+.secure-reset-pwd .reg-forms .f-title label {
+  width: 100%;
+  text-align: right;
+}
+
+.secure-reset-pwd .reg-btns {
+  padding: 6px 0 6px 124px;
+}
+
+.secure-reset-pwd .button-blue {
+  width: 305px;
+}
+
+.secure-reset-pwd .new-pwd {
+  float: left;
+  background: url("../../../images/InAPI_8_icon6.png") no-repeat left center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.secure-reset-pwd .cf-pwd {
+  float: left;
+  background: url("../../../images/InAPI_8_icon5.png") no-repeat left center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}

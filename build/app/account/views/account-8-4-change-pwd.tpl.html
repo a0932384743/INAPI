@@ -1,0 +1,28 @@
+<form novalidate="novalidate" data-ng-submit="vm.doSubmit()">
+  <div class="modal-backdrop fade in" data-ng-show="vm.isSending"></div>
+  <span data-us-spinner data-spinner-on="vm.isSending"></span>
+  <div class="modal-header ng-scope">
+    <button type="button" class="close" data-dismiss="modal" data-aria-label="Close" data-ng-click="vm.cancel()">×</button>
+    <h4 class="modal-title">密碼修改</h4>
+  </div>
+  <div class="modal-body ng-scope">
+    <div class="user-info">
+      <dl class="old-pwd">
+        <dt>舊密碼：</dt>
+        <dd><input type="password" class="form-control" placeholder="舊密碼" data-ng-model="vm.pwd" /></dd>
+      </dl>
+      <dl class="new-pwd">
+        <dt>新密碼：</dt>
+        <dd><input type="password" class="form-control" placeholder="新密碼" data-ng-model="vm.newPwd" /></dd>
+      </dl>
+      <dl class="cf-pwd">
+        <dt>確認新密碼：</dt>
+        <dd><input type="password" class="form-control" placeholder="確認新密碼" data-ng-model="vm.newPwdConfirm" /></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-default">{{ 'DIALOGS_YES' | translate}}</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal" data-ng-click="vm.cancel()">{{ 'DIALOGS_NO' | translate }}</button>
+  </div>
+</form>

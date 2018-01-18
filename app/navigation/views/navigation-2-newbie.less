@@ -1,0 +1,119 @@
+@import "../../css/core.less";
+
+.navigation-newbie {
+  min-width: @screen-default-width;
+  width: @screen-default-width;
+  overflow: hidden;
+  margin: 0px auto;
+
+  .left-menu {
+    width: 234px;
+    float: left;
+    padding: 20px 0 60px 0;
+    min-height: 520px;
+    background: url(../../images/InAPI_2_bg.png) repeat-y;
+
+    .menu-title {
+      text-align:center;
+      font-size: 19px;
+      font-weight: bold;
+      color: #999999;
+      padding: 6px 0;
+      background: url(../../images/InAPI_2_line.png) repeat-x left bottom;
+    }
+
+    .menu-nav {
+      padding: 0px 0px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-size: 15px;
+
+          a {
+            display: block;
+            height: 40px;
+            padding: 8px 0;
+            text-indent: 52px;
+            color: #7d7d7d;
+          }
+
+          ul {
+            li {
+              font-size: 13px;
+              background: url(../../images/InAPI_2_arrow.png) no-repeat right 4px;
+            }
+          }
+
+          &.active {
+            background-color: #4a957b;
+
+            & > a {
+              color: #fff;
+            }
+          }
+
+          &.menu1 {
+            & > a {
+              background: url(../../images/InAPI_2_icon1.png) no-repeat 24px 8px;
+              text-decoration: none;
+            }
+          }
+
+          &.menu2 {
+            & > a {
+              background: url(../../images/InAPI_2_icon2.png) no-repeat 24px 8px;
+            }
+          }
+
+          &.menu3 {
+            & > a {
+              background: url(../../images/InAPI_2_icon3.png) no-repeat 24px 8px;
+            }
+          }
+
+          &.menu4 {
+            & > a {
+              background: url(../../images/InAPI_2_icon4.png) no-repeat 24px 8px;
+            }
+          }
+
+          &.menu5 {
+            & > a {
+              background: url(../../images/InAPI_2_icon5.png) no-repeat 24px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-main {
+    width: 970px;
+    float: left;
+    margin: 0 23px;
+
+    .grid-group {
+      clear: both;
+      overflow: hidden;
+      width: 100%;
+      margin: 24px auto;
+    }
+
+    .grid-title {
+      background-color: #abccae;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      font-size: 17pt;
+      font-weight: bold;
+      color: #fff;
+      vertical-align: middle;
+    }
+
+    .grid-table { padding: 10px 0; }
+  }
+}

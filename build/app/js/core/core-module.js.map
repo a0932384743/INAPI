@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["core/core-module.js"],"sourcesContent":["(function () {\r\n  'use strict';\r\n\r\n  angular.module('core', [\r\n    'ui.router', 'ui.bootstrap', 'ab-base64'\r\n  ]);\r\n}());\r\n"],"file":"core-module.js"}

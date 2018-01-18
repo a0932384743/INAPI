@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["account/account-module.js"],"sourcesContent":["(function () {\r\n  'use strict';\r\n\r\n  angular.module('account', [\r\n    'ui.router', 'pascalprecht.translate', 'dialogs.main', 'angularSpinner'\r\n  ]);\r\n}());\r\n"],"file":"account-module.js"}

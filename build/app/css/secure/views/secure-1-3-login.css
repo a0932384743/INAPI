@@ -1,0 +1,25 @@
+.secure-login {
+  min-width: 1260px;
+  background: url("../../../images/light01.png") no-repeat #56a696;
+  height: 577px;
+}
+
+.secure-login .computer {
+  position: relative;
+  top: 80px;
+  min-width: 1260px;
+  max-width: 1260px;
+  height: 300px;
+  padding: 0;
+  z-index: 2;
+  background: url("../../../images/computer01.png") no-repeat 30px 0;
+  margin-bottom: 40px;
+}
+
+.secure-login .login-btns {
+  padding: 6px 30px 6px 124px;
+}
+
+.secure-login .login-btns .btn {
+  width: 305px;
+}

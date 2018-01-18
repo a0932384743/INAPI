@@ -1,0 +1,19 @@
+.secure-user-verify-success {
+  min-width: 1260px;
+  background: url("../../../images/light01.png") no-repeat #56a696;
+  height: 577px;
+}
+
+.secure-user-verify-success .reg-forms {
+  top: 95px;
+  position: relative;
+}
+
+.secure-user-verify-success .reg-btns {
+  width: 300px;
+  margin: 12px auto;
+}
+
+.secure-user-verify-success .button-blue {
+  width: 100%;
+}

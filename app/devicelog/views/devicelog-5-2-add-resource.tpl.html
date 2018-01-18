@@ -1,0 +1,22 @@
+<form data-ng-submit="vm.doSubmit()">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" data-aria-label="Close" data-ng-click="vm.cancel()">×</button>
+    <h4 class="modal-title">請輸入資源擁有者資訊</h4>
+  </div>
+  <div class="modal-body">
+    <div class="user-info">
+      <dl class="user-name">
+        <dt>擁有者帳號：</dt>
+        <dd><input type="text" class="form-control" placeholder="請輸入擁有者帳號" data-ng-model="vm.un" data-ng-disabled="vm.lockUn" /></dd>
+      </dl>
+      <dl class="login-pwd">
+        <dt style="width: 140px;">擁有者密碼：</dt>
+        <dd><input type="password" class="form-control" placeholder="請輸入擁有者密碼" data-ng-model="vm.pwd" /></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-default" data-ng-disabled="vm.isSending">{{'DIALOGS_YES' | translate}}</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal" data-ng-click="vm.cancel()"  data-ng-disabled="vm.isSending">{{'DIALOGS_NO' | translate}}</button>
+  </div>
+</form>

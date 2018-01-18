@@ -1,0 +1,41 @@
+@import "../../css/core.less";
+
+.home {
+  .portal {
+    position: relative;
+    margin: 0 0 5px 0;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &:nth-child(1)::before { background-color: #58aa9a; height: 100%;}
+
+    &:nth-child(2)::before { background-color: #58aa9a; height: 112px;}
+
+    &:nth-child(3)::before { background-color: #f96d7a; height: 112px;}
+
+    &:nth-child(4)::before { background-color: #98b12f; height: 112px;}
+
+    &:nth-child(5)::before { background-color: #004985; height: 112px;}
+
+    .pic {
+      width: 1240px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+
+      img { width: 100%; }
+    }
+  }
+
+  .experience {
+    text-align: center;
+    padding: 12px 0 48px 0;
+
+    .button-darkblue { width: 220px }
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["activedocs/activedocs-module.js"],"sourcesContent":["(function () {\r\n  'use strict';\r\n\r\n  angular.module('activedocs', [\r\n    'ui.router', 'ngSanitize', 'angularSpinner'\r\n  ]);\r\n}());\r\n"],"file":"activedocs-module.js"}

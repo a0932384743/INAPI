@@ -1,0 +1,53 @@
+@import "../../css/core.less";
+
+.sourcecode-list {
+  min-width: @screen-default-width;
+  max-width: @screen-default-width;
+  margin-top: 15px;
+  margin-bottom: 45px;
+
+  .list {
+    overflow: hidden;
+    width: 1042px;
+    margin: 174px auto;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+
+      li {
+        margin: 10px;
+        float: left;
+        width: 240px;
+
+        a {
+          display: block;
+          width: 240px;
+
+          .pic {
+            display: block;
+            border: solid #ccc 1px;
+          }
+
+          .name {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            height: 38px;
+            padding: 8px 0;
+            background: #4a957c;
+            text-align: center;
+          }
+        }
+
+        a:hover {
+          text-decoration: none;
+
+          .name { color: #7ae9d2; }
+        }
+      }
+    }
+  }
+}

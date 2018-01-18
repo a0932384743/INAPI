@@ -1,0 +1,75 @@
+@import "../../css/core.less";
+
+.download-list {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 45px;
+
+  .grid {
+    width: 100%;
+    height: 200px;
+
+    &-group {
+      border:solid #abccae 1px;
+      clear: both;
+      overflow: hidden;
+      width: 100%;
+      min-width: @screen-default-width;
+      max-width: @screen-default-width;
+      margin: 24px auto;
+    }
+
+    &-title {
+      background-color: #abccae;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      font-size: 17pt;
+      font-weight: bold;
+      color: #fff;
+      vertical-align: middle;
+    }
+
+    &-table { padding: 0 10px 10px 10px; }
+  }
+
+  .ui-grid {
+    border: 0;
+
+    &-header {
+      border: 0px;
+      color: #a0a0a0;
+
+      &-canvas {
+        background-color: #eeeeee;
+        height: 42px;
+      }
+
+      &-cell {
+        border-right: 0;
+
+        &-wrapper {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    &-cell {
+      border-right: 0;
+      color: #6d6d6d;
+
+      &:nth-child(1) { color: #009e96; }
+    }
+
+    &-row {
+      &:nth-child(even) {
+        .ui-grid-cell { background-color: #fff; }
+      }
+
+      &:nth-child(odd) {
+        .ui-grid-cell { background-color: #f7f7f7; }
+      }
+    }
+  }
+}

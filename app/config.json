@@ -1,0 +1,82 @@
+{
+  "APP_CONFIG" : {
+    "authSvrUrl" : "https://t-dp-auth.insnergy.com",
+    "apiSvrUrl" : "https://t-dp-isas.insnergy.com",
+    "httpTimeoutMilliSeconds" : 60000,
+    "reCaptchaSiteKey" : "6Lf4GSAUAAAAAHzBvXlMLoFF6CHMgqMZc6-KXa_q",
+    "credentialClientId" : "eebe9bff-8b49-4608-99f6-9fbd04b9bc34",
+    "credentialClientSecret" : "ffee0a71-1317-41b2-b58d-a2108e600fa0",
+    "passwordClientId" : "cde0d8e2-37da-4e7b-b75e-12ac7d8f18d6",
+    "passwordClientSecret" : "ffcdef46-f521-4322-9ab4-9db8d0d7616d",
+    "apiProxyUrl" : "/backend/remoteAPIProxy.do",
+    "consultingPostUrl" : "/backend/questPost.do",
+    "tableauTicketUrl" : "/backend/tableauQuery.do",
+    "tableauQueryUrl" : "https://tableauproxy.insnergy.com:8443/trusted",
+    "tableauWorkbookPrefix" : "",
+    "userVerifyUrl" : "secure/user-verify",
+    "resetPwdUrl" : "secure/r eset-pwd",
+    "homeState" : "home",
+    "loginState" : "secure.login",
+    "logoutState" : "secure.logout",
+    "firstStateAfterLogin" : "navigation.machine-install",
+    "retrieveCredentialCode" : "8DVmhAVJ"
+  },
+  "DOC_LIST" : {
+    "zh-tw" : {
+      "columnDefs": [
+        {"field": "fileName", "displayName": "文件名稱", "enableHiding": 0},
+        {"field": "progVer", "displayName": "程式版本號", "enableHiding": 0},
+        {"field": "fileVer", "displayName": "文件版本號", "enableHiding": 0},
+        {"field": "upTime", "displayName": "更新日期", "enableHiding": 0},
+        {"field": "releaseNote", "displayName": "釋出說明", "enableHiding": 0}
+      ],
+      "data": [
+        {
+          "fileName": "Cloud API",
+          "progVer": "2.1.3",
+          "fileVer": "1.2.1",
+          "upTime": "2017/01/06",
+          "releaseNote": "xxxxxxooooooooooo"
+        },
+        {
+          "fileName": "Local API",
+          "progVer": "1.1.2",
+          "fileVer": "1.2.3",
+          "upTime": "2016/12/29",
+          "releaseNote": "xxxxxxooooooooooo"
+        }
+      ]
+    },
+    "zh-cn" : {},
+    "en" : {}
+  },
+  "EMU_LIST" : {
+    "zh-tw" : {
+      "columnDefs": [
+        {"field": "fileName", "displayName": "文件名稱", "enableHiding": 0},
+        {"field": "progVer", "displayName": "程式版本號", "enableHiding": 0},
+        {"field": "fileVer", "displayName": "文件版本號", "enableHiding": 0},
+        {"field": "upTime", "displayName": "更新日期", "enableHiding": 0},
+        {"field": "releaseNote", "displayName": "釋出說明", "enableHiding": 0}
+      ],
+      "data": [
+        {
+          "fileName": "裝置模擬器",
+          "progVer": "1.0.0",
+          "fileVer": "N/A",
+          "upTime": "2017/02/16",
+          "releaseNote": "xxxxxxooooooooooo"
+        },
+        {
+          "fileName": "模擬器操作手冊",
+          "progVer": "1.0.0",
+          "fileVer": "1.1.1",
+          "upTime": "2017/02/16",
+          "releaseNote": "xxxxxxooooooooooo"
+        }
+      ]
+    },
+    "zh-cn" : {},
+    "en" : {}
+  }
+}

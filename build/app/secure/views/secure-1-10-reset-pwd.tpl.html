@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="header">
+      <div class="h01"></div>
+      <inapi-logo></inapi-logo>
+    </div>
+    <div class="secure-reset-pwd">
+      <div class="modal-backdrop fade in" data-ng-show="vm.isSending"></div>
+      <span data-us-spinner data-spinner-on="vm.isSending"></span>
+      <div class="reg-forms">
+        <div class="form-message">
+          <span class="f-text">請為您的帳戶設定新密碼</span>
+        </div>
+        <form method="put" data-ng-submit="vm.doSubmit()">
+          <div class="form-group">
+            <span class="f-title"><label for="newPwd"><i class="new-pwd"></i>新密碼</label></span>
+            <span class="f-input"><input type="password" id="newPwd" class="password" data-ng-model="vm.newPwd" placeholder="請輸入新密碼" spellcheck="false" /></span>
+          </div>
+          <div class="form-group">
+            <span class="f-title"><label for="newPwdConfirm"><i class="cf-pwd"></i>確認新密碼</label></span>
+            <span class="f-input"><input type="password" id="newPwdConfirm" class="confirm-pwd" data-ng-model="vm.newPwdConfirm" placeholder="請輸入確認新密碼" spellcheck="false" /></span>
+          </div>
+          <div class="form-group">
+            <div class="reg-btns">
+              <button type="submit" class="btn button-blue" data-auto-blur data-ng-disabled="vm.isSending">密碼變更</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

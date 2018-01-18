@@ -1,0 +1,321 @@
+.devicelog-list {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.devicelog-list .grid-function {
+  width: 1260px;
+  margin: 0 auto 12px auto;
+  overflow: hidden;
+}
+
+.devicelog-list .grid-function .function-left {
+  float: left;
+  width: 172px;
+}
+
+.devicelog-list .grid-function .function-left .set-block .button-green {
+  color: #fff;
+  font-weight: normal;
+  width: 172px;
+  font-size: 16px;
+  text-align: left;
+  height: 28px;
+}
+
+.devicelog-list .grid-function .function-left .set-block .set-icon {
+  display: inline-block;
+  background: url("../../../images/InAPI_5_setIcon.png") no-repeat;
+  width: 20px;
+  height: 24px;
+  margin: 0 16px 0 8px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.devicelog-list .grid-function .function-right {
+  float: right;
+  width: 250px;
+}
+
+.devicelog-list .grid-function .function-right .serach-block {
+  position: relative;
+}
+
+.devicelog-list .grid-function .function-right .serach-block .search-input {
+  width: 100%;
+  height: 28px;
+  border: solid #abccae 1px;
+  border-radius: 28px;
+  color: #a0a0a0;
+}
+
+.devicelog-list .grid-function .function-right .serach-block .search-btn {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: url("../../../images/InAPI_5_searchIcon.png") no-repeat;
+  border-radius: 24px;
+  position: absolute;
+  right: 3px;
+  top: 2px;
+}
+
+.devicelog-list .grid-possess {
+  width: 1260px;
+  margin: 0 auto 24px auto;
+  overflow: hidden;
+}
+
+.devicelog-list .grid-possess .possess-left {
+  width: 464px;
+  height: 220px;
+  float: left;
+  border: solid #d3d3d2;
+  border-width: 1px 0 1px 1px;
+}
+
+.devicelog-list .grid-possess .possess-left .grid {
+  width: 464px;
+  height: 220px;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid {
+  border: 0;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-header {
+  border: 0;
+  color: #a0a0a0;
+  background-color: #eee;
+  border: solid #abccae;
+  border-width: 1px 0;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-header-cell-wrapper {
+  padding: 6px 0;
+  margin: 0;
+  height: 30px;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-header-cell {
+  border-right: 0;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-viewport {
+  bottom: 2px;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-cell {
+  border-right: 0;
+  color: #6d6d6d;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-cell:nth-child(1) {
+  color: #009e96;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-cell .btn-like {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-row {
+  margin-top: 1px;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color: #fff;
+  height: 34px;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-row:nth-child(odd) .ui-grid-cell {
+  background-color: #f7f7f7;
+  height: 34px;
+}
+
+.devicelog-list .grid-possess .possess-left .ui-grid-row-selected > [ui-grid-row] > .ui-grid-cell {
+  background-color: #c9dde1;
+}
+
+.devicelog-list .grid-possess .possess-right {
+  width: 140px;
+  height: 220px;
+  line-height: 220px;
+  vertical-align: middle;
+  float: left;
+  text-align: center;
+  border: solid #d3d3d2 1px;
+}
+
+.devicelog-list .grid-possess .possess-right .add-btn {
+  background-color: transparent;
+  border: 0;
+  line-height: 100%;
+  margin: 72px 0 0 0;
+}
+
+.devicelog-list .grid-possess .possess-right .add-btn .add-icon {
+  background: url("../../../images/InAPI_5_addIcon.png") no-repeat;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 12px auto;
+}
+
+.devicelog-list .grid-pager {
+  width: 1260px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.devicelog-list .grid-pager .page-num {
+  vertical-align: middle;
+  line-height: 28px;
+}
+
+.devicelog-list .grid-pager span {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.devicelog-list .grid-pager span a {
+  color: #abccae;
+  overflow: hidden;
+  padding: 0 6px;
+  display: block;
+}
+
+.devicelog-list .grid-pager span.active,
+.devicelog-list .grid-pager span.active a {
+  color: #4a957c;
+}
+
+.devicelog-list .grid-pager span.first a {
+  text-indent: -1000px;
+  overflow: hidden;
+  display: block;
+  background: url("../../../images/InAPI_5_firstIcon.png") no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.devicelog-list .grid-pager span.prve a {
+  text-indent: -1000px;
+  overflow: hidden;
+  display: block;
+  background: url("../../../images/InAPI_5_prveIcon.png") no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.devicelog-list .grid-pager span.next a {
+  text-indent: -1000px;
+  overflow: hidden;
+  display: block;
+  background: url("../../../images/InAPI_5_nextIcon.png") no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.devicelog-list .grid-pager span.last a {
+  text-indent: -1000px;
+  overflow: hidden;
+  display: block;
+  background: url("../../../images/InAPI_5_lastIcon.png") no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.devicelog-list .grid-group {
+  border: solid #abccae 1px;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1260px;
+  max-width: 1260px;
+  margin: 24px auto;
+}
+
+.devicelog-list .grid-group .grid-title {
+  background-color: #abccae;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 17pt;
+  font-weight: bold;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.devicelog-list .grid-group .grid-table {
+  padding: 0;
+}
+
+.devicelog-list .grid {
+  width: 100%;
+  height: 450px;
+}
+
+.devicelog-list .grid .watermark {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0.25;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.devicelog-list .grid .ui-grid {
+  border: 0;
+}
+
+.devicelog-list .grid .ui-grid-header {
+  border: 0;
+  color: #a0a0a0;
+  background-color: #fff;
+  border: solid #abccae;
+  border-width: 1px 0;
+}
+
+.devicelog-list .grid .ui-grid-header-cell {
+  border-right: 0;
+}
+
+.devicelog-list .grid .ui-grid-header-cell-wrapper {
+  padding: 6px 0;
+  margin: 0;
+  height: 30px;
+}
+
+.devicelog-list .grid .ui-grid-cell {
+  border-right: 0;
+  color: #6d6d6d;
+}
+
+.devicelog-list .grid .ui-grid-cell:nth-child(1) {
+  color: #009e96;
+}
+
+.devicelog-list .grid .ui-grid-cell:nth-child(even) .ui-grid-cell {
+  background-color: #fff;
+}
+
+.devicelog-list .grid .ui-grid-cell:nth-child(odd) .ui-grid-cell {
+  background-color: #f7f7f7;
+}
+
+.devicelog-list .grid .ui-grid-cell .btn-like {
+  cursor: pointer;
+  height: 24px;
+  margin-top: 2px;
+}
+
+.devicelog-list .grid .ui-grid-center {
+  text-align: center;
+}

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["core/components/footer-component.js"],"sourcesContent":["(function () {\n  'use strict';\n\n  angular.module('core')\n    .component('inapiFooter', {\n      templateUrl: 'core/components/footer-component.tpl.html'\n    });\n}());\n"],"file":"footer-component.js"}

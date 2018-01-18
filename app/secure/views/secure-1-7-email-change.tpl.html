@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="header">
+      <div class="h01"></div>
+      <inapi-logo></inapi-logo>
+    </div>
+    <div class="secure-email-change">
+      <div class="edit-mail">
+        <form novalidate="novalidate" data-ng-submit="vm.doSubmit()">
+          <div class="modal-backdrop fade in" data-ng-show="vm.isSending"></div>
+          <span data-us-spinner data-spinner-on="vm.isSending"></span>
+          <div class="reg-forms">
+            <div class="form-message">
+              <span class="f-text">請輸入欲變更信箱資訊</span>
+            </div>
+            <div class="form-group">
+              <span class="f-title"><label for="newEmail">信箱</label></span>
+              <span class="f-input"><input type="text" id="newEmail" name="newEmail" required="required" data-ng-model="vm.newEmail" class="email form-control" spellcheck="false" placeholder="請輸入新電子信箱" /></span>
+            </div>
+            <div class="form-group">
+              <span class="f-title"><label for="pwd">密碼</label></span>
+              <span class="f-input"><input type="password" id="pwd" required="required" data-ng-model="vm.pwd" class="password form-control" spellcheck="false" placeholder="請輸入註冊密碼" /></span>
+            </div>
+            <div class="form-group">
+              <div class="reg-btns"><button type="submit" class="btn button-blue" data-auto-blur data-ng-disabled="vm.isSending">確認修改</button></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-md-12">
+    <inapi-top-menu data-menu-id="account"></inapi-top-menu>
+
+    <div class="content-scroll">
+      <div class="account-user-info">
+        <div class="grid-group">
+          <div class="grid-title">帳戶資訊</div>
+          <div class="grid-table">
+            <div class="client-block">
+              <div class="client-info">
+                <div class="info">
+                  <dl>
+                    <dt>帳號：</dt>
+                    <dd>{{ vm.userId }}</dd>
+                  </dl>
+                  <dl>
+                    <dt>Client ID：</dt>
+                    <dd>{{ vm.clientId }}</dd>
+                  </dl>
+                  <dl>
+                    <dt>Secret：</dt>
+                    <dd>{{ vm.clientSecret }}</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="user-info">
+                <div class="info">
+                  <dl class="username">
+                    <dt>用戶名稱：</dt>
+                    <dd>
+                      {{ vm.userName }} <button type="button" class="btn button-blue" data-auto-blur data-ng-click="vm.editUserName()" data-ng-disabled="vm.isUserIdInvalid">用戶名稱修改</button>
+                    </dd>
+                  </dl>
+                  <dl class="email">
+                    <dt>電子信箱：</dt>
+                    <dd>
+                      {{ vm.userEmail }} <button type="button" class="btn button-blue" data-auto-blur data-ng-click="vm.editEmail()" data-ng-disabled="vm.isUserIdInvalid">電子信箱修改</button>
+                    </dd>
+                  </dl>
+                  <dl class="uptime">
+                    <dt>更新時間：</dt>
+                    <dd>
+                      {{ vm.updateTime }} <button type="button" class="btn button-blue" data-auto-blur data-ng-click="vm.editPwd()" data-ng-disabled="vm.isUserIdInvalid">登入密碼修改</button>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

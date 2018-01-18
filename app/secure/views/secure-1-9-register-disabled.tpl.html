@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="header">
+      <div class="h01"></div>
+      <inapi-logo></inapi-logo>
+    </div>
+    <div class="secure-register-disabled">
+      <div class="failure">
+        <div class="reg-forms">
+          <div class="form-message">
+            <span class="f-text">
+              您的信箱尚未完成認證<br />請於信箱認證後再進行登入
+            </span>
+          </div>
+          <div class="form-group">
+            <span data-us-spinner data-spinner-key="spinner-1"></span>
+            <div class="reg-btns"><button class="btn button-blue" data-auto-blur data-ng-click="vm.confirmToResend()" data-ng-disabled="vm.isSending">重發認證信件</button></div>
+            <div class="reg-btns"><button class="btn button-blue" data-auto-blur data-ng-click="vm.go('secure.email-change')" data-ng-disabled="vm.isSending">更換電子信箱</button></div>
+            <div class="reg-btns"><button class="btn button-blue" data-auto-blur data-ng-click="vm.go('secure.login')" data-ng-disabled="vm.isSending">前往帳號登入</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

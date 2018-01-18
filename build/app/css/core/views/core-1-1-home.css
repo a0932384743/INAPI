@@ -1,0 +1,56 @@
+.home .portal {
+  position: relative;
+  margin: 0 0 5px 0;
+}
+
+.home .portal::before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.home .portal:nth-child(1)::before {
+  background-color: #58aa9a;
+  height: 100%;
+}
+
+.home .portal:nth-child(2)::before {
+  background-color: #58aa9a;
+  height: 112px;
+}
+
+.home .portal:nth-child(3)::before {
+  background-color: #f96d7a;
+  height: 112px;
+}
+
+.home .portal:nth-child(4)::before {
+  background-color: #98b12f;
+  height: 112px;
+}
+
+.home .portal:nth-child(5)::before {
+  background-color: #004985;
+  height: 112px;
+}
+
+.home .portal .pic {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.home .portal .pic img {
+  width: 100%;
+}
+
+.home .experience {
+  text-align: center;
+  padding: 12px 0 48px 0;
+}
+
+.home .experience .button-darkblue {
+  width: 220px;
+}

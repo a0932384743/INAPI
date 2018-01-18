@@ -1,0 +1,19 @@
+<form data-ng-submit="vm.doSubmit()">
+  <div class="modal-backdrop fade in" data-ng-show="vm.isSending"></div>
+  <span data-us-spinner data-spinner-on="vm.isSending"></span>
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" data-aria-label="Close" data-ng-click="vm.cancel()">×</button>
+    <h4 class="modal-title">用戶名稱修改</h4>
+  </div>
+  <div class="modal-body ng-scope">
+    <div class="user-info">
+      <dl class="user-name">
+        <dt>用戶名稱：</dt>
+        <dd><input type="text" class="form-control" placeholder="用戶名稱" data-ng-model="vm.userName" /></dd></dl>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-default">{{ 'DIALOGS_YES' | translate}}</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal" data-ng-click="vm.cancel()">{{ 'DIALOGS_NO' | translate }}</button>
+  </div>
+</form>

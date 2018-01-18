@@ -1,0 +1,23 @@
+.secure-forget-pwd {
+  min-width: 1260px;
+  background: url("../../../images/light01.png") no-repeat #56a696;
+  height: 577px;
+}
+
+.secure-forget-pwd .edit-pwd {
+  position: relative;
+  top: 95px;
+  min-width: 1260px;
+  max-width: 1260px;
+  padding: 0;
+  z-index: 5;
+  background: url("../../../images/passwordTitle.png") no-repeat 150px 110px;
+}
+
+.secure-forget-pwd .reg-btns {
+  padding: 6px 30px 6px 124px;
+}
+
+.secure-forget-pwd .button-blue {
+  width: 305px;
+}

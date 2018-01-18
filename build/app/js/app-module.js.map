@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["app-module.js"],"sourcesContent":["(function() {\n  'use strict';\n\n  angular.module('inapi', [\n    'ui.router', 'ui.bootstrap', 'pascalprecht.translate', 'dialogs.main',\n    'core', 'secure', 'navigation', 'activedocs', 'sourcecode', 'devicelog', 'download', 'consulting', 'account'\n  ]);\n}());\n"],"file":"app-module.js"}

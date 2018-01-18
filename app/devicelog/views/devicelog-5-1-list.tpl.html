@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-md-12">
+    <inapi-top-menu data-menu-id="devicelog"></inapi-top-menu>
+    <div class="content-scroll">
+      <div class="modal-backdrop fade in" data-ng-show="vm.isLoading"></div>
+      <span data-us-spinner data-spinner-on="vm.isLoading"></span>
+      <div class="devicelog-list">
+        <div class="grid-function">
+          <div class="function-left">
+            <div class="set-block">
+              <button class="btn button-green" data-auto-blur data-ng-click="vm.toggleResourceList()"><i class="set-icon"></i>存取資源設定</button>
+            </div>
+          </div>
+          <div class="function-right">
+            <form data-ng-submit="vm.doSearchDevice()">
+              <div class="serach-block">
+                <input type="text" class="form-control search-input" placeholder="裝置ID搜尋" data-ng-model="vm.qryDeviceId" data-ng-change="vm.clearQueryId()">
+                <input type="submit" class="search-btn" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="grid-possess" data-ng-show="vm.flagShowResource">
+          <div class="possess-left">
+            <div class="grid" data-ui-grid-selection data-ui-grid="vm.resourceListOpt">
+              <div class="watermark" data-ng-show="!vm.resourceListOpt.data.length">查無資料</div>
+            </div>
+          </div>
+          <div class="possess-right"><button class="add-btn" data-ng-click="vm.getResourceAuth()"><i class="add-icon"></i>新增存取資源</button></div>
+        </div>
+
+        <div class="grid-group">
+          <div class="grid-title">裝置</div>
+          <div class="grid-table">
+            <div class="grid" data-ui-grid-pagination data-ui-grid="vm.deviceListOpt">
+              <div class="watermark" data-ng-show="!vm.deviceListOpt.data.length">查無資料</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-pager">
+          <div class="page-num">
+            <span class="first"><a href="javascript:void(0)" data-ng-click="vm.deviceGridApi.pagination.seek(1)">first</a></span>
+            <span class="prve"><a href="javascript:void(0)" data-ng-click="vm.deviceGridApi.pagination.previousPage()">prve</a></span>
+            <span data-ng-repeat="i in vm.getEmptyArray(vm.deviceGridApi.pagination.getTotalPages()) track by $index" data-ng-class="vm.getPageClass($index)">
+              <a href="javascript:void(0)" data-ng-click="vm.deviceGridApi.pagination.seek($index + 1)">{{$index + 1}}</a>
+            </span>
+            <span class="next"><a href="javascript:void(0)" data-ng-click="vm.deviceGridApi.pagination.nextPage()">next</a></span>
+            <span class="last"><a href="javascript:void(0)" data-ng-click="vm.deviceGridApi.pagination.seek(vm.deviceGridApi.pagination.getTotalPages())">last</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
